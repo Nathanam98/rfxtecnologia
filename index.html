@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/minilogo.png" type="image/x-icon">
+  <title>Rfx tecnologia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body data-bs-theme="light">
+
+  <div class="whatsapp-float">
+    <a href="https://api.whatsapp.com/send?phone=47999760826" target="_blank">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+    <div class="whatsapp-message">Olá, como posso ajudar?</div>
+  </div>
+
+  <header>
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="Logo da cafeteria Sereneatto"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/logo-mobile.png"
+                alt="Logo da cafeteria Serenatto"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                    <label class="form-check-label" for="modo-noturno">Modo noturno</label>
+                  </div>
+                </a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
+      <div class="banners-titulo bg-body-secondary py-5">
+        <!-- Adicione a tag <video> aqui -->
+        <video autoplay loop muted playsinline>
+          <source src="./assets/videobanner-1.mp4" type="video/mp4">
+          <!-- Adicione outros formatos de vídeo, se necessário -->
+        </video>
+
+        <h2 class="fw-bold">Sua pausa para desfrutar a vida. </h2>
+        <p>Como representante, estou animado em recebê-lo em nosso ambiente dedicado à precisão e inovação. Explore o
+          mundo da usinagem avançada e descubra como nossas máquinas podem elevar a eficiência e qualidade em seus
+          projetos.</p>
+      </div>
+    </section>
+
+
+    <section class="py-5">
+      <h2 class="text-center fw-bold pb-1">Nossos serviços</h2>
+
+      <div class="container d-flex justify-content-around flex-wrap">
+
+        <div class="card m-4" style="width: 20rem;">
+          <img src="./assets/1-card.png" class="card-img-top"
+            alt="Balcão de padaria tradicional com alimentos diversos">
+          <div class="card-body">
+            <h5 class="card-title py-2 fw-bold">Máquinas CNC </h5>
+            <p class="card-text">Oferecemos uma ampla gama de máquinas CNC, incluindo tornos CNC, fresadoras CNC,
+              centros de usinagem, entre outros.</p>
+            <a href="#" class="btn botao-padrao w-100 fw-bold" data-bs-toggle="offcanvas" data-bs-target="#canvas-1"
+              aria-controls="offcanvasRight">Quero detalhes</a>
+          </div>
+        </div>
+
+        <div class="card m-4" style="width: 20rem;">
+          <img src="./assets/2-card.png" class="card-img-top" alt="Mesa de buffet com alimentos diversos">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Consultoria Técnica</h5>
+            <p class="card-text">Fornecemos consultoria técnica para ajudar os clientes a escolher a máquina CNC mais
+              adequada às suas necessidades específicas de fabricação.</p>
+            <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#canvas-2" aria-controls="offcanvasRight">Quero detalhes</a>
+          </div>
+        </div>
+
+        <div class="card m-4" style="width: 20rem;">
+          <img src="./assets/3-card.png" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Manutenção e Serviços</h5>
+            <p class="card-text">Prestamos serviços de manutenção preventiva e corretiva para garantir o desempenho
+              contínuo e a longevidade das máquinas CNC.</p>
+            <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#canvas-3" aria-controls="offcanvasRight">Quero detalhes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banners banner-2 d-flex flex-column justify-content-center">
+      <div class="banners-titulo bg-body-secondary text-center py-5">
+        <h2 class="fw-bold">Portas abertas para todos os públicos.</h2>
+        <p>Nosso espaço é aconchegante, pet friendly, preparado para receber crianças, pessoas com deficiência e
+          ambiente para coworking.</p>
+      </div>
+    </section>
+
+    <section class="py-5">
+
+      <h2 class="fw-bold text-center pb-1">Nossos produtos</h2>
+
+      <div class="row mx-0">
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-1" style="width: 18rem;">
+            <img src="./assets/card1.png" class="card-img-top" alt="card1.">
+            <div class="card-body">
+              <h3 class="card-text text-center fw-bold">Torno CNC de Precisão</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-2" style="width: 18rem;">
+            <img src="./assets/card2.png" class="card-img-top" alt="card2.">
+            <div class="card-body">
+              <h3 class="card-text fw-bold text-center">Fresadoras CNC Verticais e Horizontais</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" style="width: 18rem;">
+            <img src="./assets/card3.png" class="card-img-top" alt="Vitaminas variadas">
+            <div class="card-body">
+              <h3 class="card-text text-center fw-bold text-nowrap">Centros de Usinagem</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" style="width: 18rem;">
+            <img src="./assets/card4.png" class="card-img-top" alt="Pães variados">
+            <div class="card-body">
+              <h3 class="card-text text-center fw-bold">Máquinas de Corte a Laser CNC</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" style="width: 18rem;">
+            <img src="./assets/card5.png" class="card-img-top" alt="Bolo de morango">
+            <div class="card-body">
+              <h3 class="card-text text-center fw-bold">Sistemas de Automação CNC</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" style="width: 18rem;">
+            <img src="./assets/card6.png" class="card-img-top" alt="Torta salgada">
+            <div class="card-body">
+              <h3 class="card-text text-center fw-bold">Acessórios para Máquinas CNC</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="banners banner-3">
+    </section>
+
+    <section class="py-4 container">
+      <div class="row">
+        <div class="col-10 col-xl-8 mx-auto">
+          <div class="border border-2 rounded p-3">
+            <h3 class="fw-bold p-3">Entre em contato!</h3>
+            <form id="contato" action="processar_formulario.php" method="post">
+              <!-- Seus campos de formulário aqui -->
+    
+              <!-- Adicione o atributo name aos campos -->
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingNome" name="floatingNome" placeholder="Nome">
+                <label for="floatingNome">Nome</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingEmail" name="floatingEmail" placeholder="name@example.com">
+                <label for="floatingEmail">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingTelefone" name="floatingTelefone" placeholder="Telefone">
+                <label for="floatingTelefone">Telefone</label>
+              </div>
+              <!-- Restante do seu formulário -->
+    
+              <!-- Altere o tipo do botão para "submit" -->
+              <button type="submit" class="btn botao-padrao w-100 fw-bold mt-3 py-3">Enviar</button>
+            </form>
+          </div>
+    
+          <!-- Restante do seu HTML -->
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="text-center">
+      <section class="container p-4 pb-0 mb-4">
+        <a class="btn" href="#!"><i class="bi bi-whatsapp"></i></a>
+        <a class="btn" href="#!"><i class="bi bi-instagram"></i></a>
+        <a class="btn" href="#!"><i class="bi bi-twitter"></i></a>
+      </section>
+      <section class="container p-4 mb-4">
+        <!-- Título das Empresas Parceiras -->
+        <h4 class="mb-3">Empresas Parceiras</h4>
+        
+        <!-- Logos das empresas parceiras -->
+        <img src="assets/logoparceiro.png" alt="Logo Empresa 1" class="logo-parceiro">
+        <img src="assets/logoparceiro.png" alt="Logo Empresa 2" class="logo-parceiro">
+        <img src="assets/logoparceiro.png" alt="Logo Empresa 3" class="logo-parceiro">
+        <img src="assets/logoparceiro.png" alt="Logo Empresa 4" class="logo-parceiro">
+      </section>
+      <div class="p-3">
+        2024 <i class="bi bi-c-circle"></i> Desenvolvido por AMTECH
+      </div>
+    </footer>
+    
+
+  </main>
+
+  <!-- canvas 1 -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Torno CNC de Precisão</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              CNC
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            </div>
+            Máquinas CNC especializadas em torneamento, processo de usinagem que rotaciona a peça para remover material
+            e criar formas cilíndricas ou cônicas.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Fresadoras CNC
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Descrição: Equipamentos versáteis que utilizam ferramentas rotativas para remover material de uma peça,
+              oferecendo flexibilidade em várias direções. </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Centros de Usinagem
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Descrição: Máquinas CNC que integram operações de fresamento, furação e outras, tudo em um único centro de
+              usinagem. </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Canvas 2 -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-2" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Sistemas de Automação CNC</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionEventos" aria-expanded="false" aria-controls="collapseOne">
+              Descrição
+            </button>
+          </h2>
+          <div id="accordionEventos" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Soluções que automatizam processos de produção, melhorando a eficiência e reduzindo o tempo de ciclo.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionCatering" aria-expanded="false" aria-controls="collapseOne">
+              Aplicações
+            </button>
+          </h2>
+          <div id="accordionCatering" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Utilizado para produção em série, reduzindo a necessidade de intervenção humana e aumentando a
+              produtividade. </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <!-- Canvas 3 -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-3" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Acessórios para Máquinas CNC
+
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionEncomendas" aria-expanded="false" aria-controls="collapseOne">
+              Descrição
+            </button>
+          </h2>
+          <div id="accordionEncomendas" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Fornecimento de ferramentas, fixadores, dispositivos de fixação e outros acessórios essenciais para
+              otimizar a operação das máquinas.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionEntrega" aria-expanded="false" aria-controls="collapseOne">
+              Aplicações
+            </button>
+          </h2>
+          <div id="accordionEntrega" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Melhora a eficiência e a versatilidade das máquinas CNC, garantindo operações suaves e precisas.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <!-- Modal 1 -->
+
+  <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Serviços de Manutenção Especializada:
+
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/card1.png" class="w-100" alt="Xícara de café preto">
+          <p>Descrição: Pacotes de manutenção personalizados para garantir o desempenho contínuo das máquinas CNC,
+            incluindo suporte técnico, peças de reposição e treinamento adicional.</p>
+          <p>Aplicações: Mantém as máquinas operando de forma eficiente, reduzindo o tempo de inatividade e prolongando
+            a vida útil dos equipamentos.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar
+            janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+
+  <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Fresadoras CNC Verticais e Horizontais</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/card2.png" class="w-100" alt="Xícara de café expresso">
+          <p>Fresadoras CNC Verticais:
+
+            Eixo Vertical: O eixo da ferramenta está orientado verticalmente em relação à mesa de trabalho.
+            Movimento da Ferramenta: A ferramenta desce ou sobe verticalmente para fresar a peça.
+            Aplicações Comuns: Ideal para operações como faceamento, fresamento de contornos e perfuração em superfícies
+            planas.</p>
+
+          <p>Fresadoras CNC Horizontais:
+
+            Eixo Horizontal: O eixo da ferramenta está orientado horizontalmente em relação à mesa de trabalho.
+            Movimento da Ferramenta: A ferramenta move-se horizontalmente para fresar a peça.
+            Aplicações Comuns: Usadas para operações como fresamento de sulcos, cavidades e superfícies inclinadas.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar
+            janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
