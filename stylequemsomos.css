@@ -1,0 +1,93 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Seção Quem Somos */
+.quem-somos {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.quem-somos h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.quem-somos p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Representante */
+.representante {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.representante h2 {
+    font-size: 2em;
+    margin-right: 20px;
+    color: #003366;
+}
+
+.representante-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.representante-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.representante-info p {
+    max-width: 500px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .representante {
+        flex-direction: column;
+    }
+
+    .representante-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .representante-img {
+        margin-bottom: 10px;
+    }
+}

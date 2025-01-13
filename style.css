@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.top-bar {
+    background-color: #1e2c4a;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contact-info div {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #162447;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('fotos/capa.png'); /* Substitua pela sua imagem */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sobre-nos {
+    display: flex;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.sobre-nos .container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.about-content {
+    width: 50%;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: #1e2c4a;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.values div {
+    margin-bottom: 15px;
+}
+
+.values h3 {
+    font-weight: bold;
+    color: #1e2c4a;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e2c4a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #1e2c4a;
+}
+
+.produtos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.produtos h2 {
+    font-size: 2rem;
+    color: #1e2c4a;
+    margin-bottom: 10px;
+}
+
+.produtos .carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 60%; /* Reduz a largura do carrossel */
+    margin: 0 auto; /* Centraliza o carrossel */
+}
+
+.produtos .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.produtos .carousel-item {
+    flex: 0 0 33.3333%; /* Exibe 3 itens de cada vez */
+    padding: 3px; /* Diminui ainda mais o padding */
+    text-align: center;
+}
+
+.produtos .carousel-item img {
+    width: 100%; /* Faz as imagens preencherem completamente o espaço */
+    height: 200px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Preenche o espaço sem distorcer a imagem */
+    margin: 0 auto; /* Centraliza as imagens */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Aumenta o deslocamento e a opacidade da sombra */
+}
+
+.produtos .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3); /* Reduz a opacidade para menos destaque */
+    color: white;
+    border: none;
+    padding: 4px 6px; /* Botões ainda menores */
+    cursor: pointer;
+    z-index: 10;
+}
+
+.produtos .carousel-control.prev {
+    left: 3px;
+}
+
+.produtos .carousel-control.next {
+    right: 3px;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .produtos .carousel-container {
+        max-width: 90%; /* O carrossel ocupa mais largura */
+        margin: 20px auto; /* Adiciona espaçamento ao redor */
+    }
+
+    .produtos .carousel {
+        flex-direction: row; /* Mantém o layout horizontal */
+    }
+
+    .produtos .carousel-item {
+        flex: 0 0 100%; /* Mostra um item de cada vez */
+        padding: 10px; /* Aumenta o espaçamento interno */
+    }
+
+    .produtos .carousel-item img {
+        width: 100%; /* Ajusta o tamanho das imagens */
+        height: auto; /* Remove a altura fixa para maior flexibilidade */
+    }
+
+    .produtos .carousel-control {
+        width: 40px; /* Aumenta o tamanho dos botões para serem mais fáceis de clicar */
+        height: 40px;
+        font-size: 1.5rem; /* Texto ou ícones maiores */
+        background-color: rgba(0, 0, 0, 0.5); /* Mais destaque */
+        color: white;
+        border-radius: 50%; /* Botões circulares */
+    }
+
+    .produtos .carousel-control.prev {
+        left: 10px;
+    }
+
+    .produtos .carousel-control.next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .produtos .carousel-container {
+        max-width: 100%; /* O carrossel ocupa a largura total */
+    }
+
+    .produtos .carousel-item img {
+        height: 250px; /* Ajusta a altura para telas muito pequenas */
+        object-fit: cover; /* Mantém as proporções sem distorção */
+    }
+
+    .produtos h2 {
+        font-size: 1.2rem; /* Fonte menor para o título */
+    }
+
+    .produtos .carousel-control {
+        font-size: 2rem; /* Aumenta o tamanho dos controles */
+    }
+}
+
+
+/* Footer container styling */
+.footer {
+    background-color: #1e2c4a;
+    color: #FFFFFF;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .logo {
+    max-width: 300px;
+}
+
+.footer .logo img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer .logo p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.contact-info h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.footer .social-media a {
+    margin-right: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer .social-media a:hover {
+    color: #FFD700;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.parceiros {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logos-parceiros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que as logos quebrem para a próxima linha */
+    gap: 30px; /* Espaço entre as logos */
+    margin-top: 20px;
+}
+
+.logos-parceiros img {
+    width: 120px; /* Aumenta o tamanho das logos */
+    height: auto;
+}
+
+
+
+
+/* WhatsApp icon */
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+.whatsapp-link img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ajustando o tamanho das imagens */
+.contact-icon {
+    width: 20px; /* Tamanho padrão da imagem */
+    height: auto;
+}
+
+/* Efeito de hover */
+.contact-item:hover {
+    color: #02b5e2;
+    transform: translateX(5px); /* Leve deslocamento no hover */
+}
+
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .contact-icon {
+        width: 18px; /* Ajustando o tamanho da imagem em telas menores */
+    }
+}
+
+
+
+
+
+
+
+
+
